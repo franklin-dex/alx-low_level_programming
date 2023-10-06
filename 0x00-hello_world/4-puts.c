@@ -7,7 +7,7 @@
  * Return: 0
  */
 int main(void) 
-//prints the phase 'programming ...'	
+//prints the phase 'programming ...'//	
 {
 	puts("\"Programming is like building a multilingual puzzle");
 	return (0);
