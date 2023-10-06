@@ -1,6 +1,6 @@
 #include <stdio.h>
 /*
- * main - this is the entry point
+ * main - this ptints the phase 'programming...'
  *
  * Description: this is the main function which serves as the entry point.
  * it prints a message to the standard output
