@@ -6,7 +6,8 @@
  * it prints a message to the standard output
  * Return: 0
  */
-int main(void)
+int main(void) 
+//prints the phase 'programming ...'	
 {
 	puts("\"Programming is like building a multilingual puzzle");
 	return (0);
