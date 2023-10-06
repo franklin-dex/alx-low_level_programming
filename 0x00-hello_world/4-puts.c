@@ -1,4 +1,4 @@
-#include <stdio.io>
+#include <stdio.h>
 /*
  * main - this is the main put function
  * Return: 0
