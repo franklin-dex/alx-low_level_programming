@@ -1,0 +1,8 @@
+n
+sitive_or_negative.c:8: WARNING: Missing a blank line after declarations
+0-positive_or_negative.c:9: ERROR: spaces required around that '=' (ctx:WxV)
+0-positive_or_negative.c:11: ERROR: space required after that ',' (ctx:VxV)
+0-positive_or_negative.c:25: ERROR: parentheses are required on a return statement
+total: 3 errors, 1 warnings, 26 lines checked
+0-positive_or_negative.c:5: warning: no description found for function main
+root@d51db600723c:/alx-low_level_programming/0x01-variables_if_else_while#                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
