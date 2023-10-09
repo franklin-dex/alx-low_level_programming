@@ -3,7 +3,7 @@
 /*
  * main - Entry point
  *
- * Description: This is the main function that serves as the entry point of the program.
+ * Description:This is the main function that serves as the entry point
  *
  * Return: Always 0 (Success)
  */
