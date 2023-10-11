@@ -21,7 +21,7 @@ void times_table(void)
 
 			if (product < 10)
 			{
-				_putchar('\t'); // Use tabs for indentation
+				_putchar('\t');
 				_putchar(product + '0');
 			}
 			else
@@ -33,3 +33,4 @@ void times_table(void)
 		_putchar('\n');
 	}
 }
+
