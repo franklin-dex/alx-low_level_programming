@@ -3,6 +3,8 @@
 /**
  * main - entry
  *
+ * print_alphabet - prints lowercase alphabet
+ *
  * Return: Always 0
  */
 
