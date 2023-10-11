@@ -25,6 +25,7 @@ void times_table(void)
 
 			if (product < 10)
 			{
+				_putchar('	');
 				_putchar('0' + product);
 			}
 			else
