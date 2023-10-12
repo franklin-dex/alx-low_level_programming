@@ -1,7 +1,7 @@
 include "main.h"
 
 /**
- * mul - multiply 2 int
+ * mul - multiply two int
  *
  * @a: first int
  *
