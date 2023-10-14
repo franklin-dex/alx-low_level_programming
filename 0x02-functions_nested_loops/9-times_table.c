@@ -16,16 +16,16 @@ void times_table(void)
 			if (j > 0)
 			{
 				_putchar(',');
-				_putchar('	');
+				_putchar(' ');
 				if (product < 10)
 				{
-					_putchar('	');
+					_putchar(' ');
 				}
 			}
 
 			if (product < 10)
 			{
-				_putchar('	');
+				_putchar(' ');
 				_putchar('0' + product);
 			}
 			else
