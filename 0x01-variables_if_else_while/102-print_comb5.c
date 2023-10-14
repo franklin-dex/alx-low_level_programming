@@ -1,5 +1,10 @@
 #include <stdio.h>
 
+/**
+ * main - entry point
+ *
+ * Return: 0 always
+ */
 int main(void)
 {
 	int num1, num2;
