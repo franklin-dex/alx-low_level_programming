@@ -17,14 +17,14 @@ int main(void)
 			putchar((b % 10) + '0');
 			
 			if (a == 8 && b == 9)
-				continue;
+				break;
 
 			putchar(',');
 			putchar(' ');
 		}
 	}
 
-	return 0;
+	return (0);
 }
 
 
