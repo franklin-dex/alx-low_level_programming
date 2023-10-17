@@ -5,7 +5,7 @@
  * @n: first parameter
  * @a: second parameter
  */
-void print_array(int *a int n)
+void print_array(int *a, nt n)
 {
 	int i;
 
