@@ -1,29 +1,35 @@
 #include <stdio.h>
+
 /**
- * main - entry of the code
+ * main - entry point of the code
  *
  * Return: always 0
  */
 int main(void)
 {
-	long long int prev = 1, current = 2, next;
-	int count;
+	int prev = 1, current = 2, next;
+	int sum = 0;
 
-	printf("%lld,%lld,", prev, current);
+	printf("%d,%d,", prev, current);
 
-	for (count = 3; count <= 50; count++)
+	while (current <= 4000000)
 	{
 		next = prev + current;
-		printf("%lld", next);
-
-		if (count < 50)
-			printf(",");
-		else
-			printf("\n");
-
+		if (next % 2 == 0)
+		{
+			sum += next;
+		}
 		prev = current;
 		current = next;
+		if (current <= 4000000)
+		{
+			printf("%d", current);
+			if (current <= 3999998)
+				printf(",");
+		}
 	}
+
+	printf("\nSum of even-valued terms:%d\n", sum);
 
 	return (0);
 }
