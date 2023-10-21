@@ -25,7 +25,7 @@ int main(void)
 		{
 			printf("%d", current);
 			if (current <= 3999998)
-				printf(",");
+				printf(", ");
 		}
 	}
 
