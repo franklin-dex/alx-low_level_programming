@@ -1,5 +1,10 @@
 #include <stdio.h>
 
+/**
+ * main - entry of the code
+ *
+ * Return: Always 0.
+ */
 int main(void)
 {
 	int sum = 0;
