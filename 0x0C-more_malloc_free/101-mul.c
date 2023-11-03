@@ -11,12 +11,12 @@
 int is_digit(char *str)
 {
 	if (str == NULL)
-		return 0;
+		return (0);
 
 	while (*str)
 	{
 		if (*str < '0' || *str > '9')
-			return 0;
+			return (0);
 		str++;
 	}
 
