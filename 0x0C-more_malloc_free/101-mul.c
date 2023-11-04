@@ -1,13 +1,8 @@
-#include "main.h"
 #include <stdio.h>
+#include "main.h"
 #include <stdlib.h>
+#include <string.h>
 
-/**
- * is_digit - Check if a string contains only digits
- * @str: The string to check
- *
- * Return: 1 if all characters are digits, 0 otherwise
- */
 int is_digit(char *str)
 {
 	if (str == NULL)
@@ -23,19 +18,16 @@ int is_digit(char *str)
 	return (1);
 }
 
-/**
- * multiply - Multiply two positive numbers
- * @num1: First number as a string
- * @num2: Second number as a string
- *
- * Return: The result of multiplication as a string
- */
 char *multiply(char *num1, char *num2)
 {
-	int len1 = strlen(num1);
-	int len2 = strlen(num2);
-	int len = len1 + len2;
-	int *result = calloc(len, sizeof(int));
+	int len1, len2, len;
+	int *result;
+	char *res_str;
+
+	len1 = strlen(num1);
+	len2 = strlen(num2);
+	len = len1 + len2;
+	result = calloc(len, sizeof(int));
 
 	if (result == NULL)
 	{
@@ -57,7 +49,7 @@ char *multiply(char *num1, char *num2)
 	while (len > 0 && result[len - 1] == 0)
 		len--;
 
-	char *res_str = malloc(len + 1);
+	res_str = malloc(len + 1);
 
 	if (res_str == NULL)
 	{
@@ -77,14 +69,16 @@ char *multiply(char *num1, char *num2)
 
 int main(int argc, char *argv[])
 {
+	char *num1, *num2, *result;
+
 	if (argc != 3 || !is_digit(argv[1]) || !is_digit(argv[2]))
 	{
 		printf("Error\n");
 		return (98);
 	}
 
-	char *num1 = argv[1];
-	char *num2 = argv[2];
+	num1 = argv[1];
+	num2 = argv[2];
 
 	if (strcmp(num1, "0") == 0 || strcmp(num2, "0") == 0)
 	{
@@ -92,7 +86,7 @@ int main(int argc, char *argv[])
 		return (0);
 	}
 
-	char *result = multiply(num1, num2);
+	result = multiply(num1, num2);
 
 	printf("%s\n", result);
 	free(result);
