@@ -1,12 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
-
-int main(in - Entry point
-		 * @argc: The number of command-line arguments
-		 *  * @argv: An array of command-line argument strings
-		 *   *
-		 *    * Return: 0 on success, 1 for incorrect number of arguments, 2 for negative input
-		 *     */iiint argc, char *argv[])
+/**
+ * main - Entry point
+ * @argc: The number of command-line arguments
+ * @argv: An array of command-line argument strings
+ * Return: 0 on success, 1 for incorrect arguments, 2 for negative input
+ */
+int main(int argc, char *argv[])
 {
 	if (argc != 2)
 	{
