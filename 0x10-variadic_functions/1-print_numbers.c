@@ -8,27 +8,28 @@
  */
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
-    va_list args;
-    unsigned int i;
+	va_list args;
+	unsigned int i;
 
-    va_start(args, n);
+	va_start(args, n);
 
-    for (i = 0; i < n; i++)
-    {
-        _putchar(va_arg(args, int) + '0');
+	for (i = 0; i < n; i++)
+	{
+		_putchar(va_arg(args, int) + '0');
 
-        if (separator != NULL && i < n - 1)
-        {
-            unsigned int j = 0;
-            while (separator[j])
-            {
-                _putchar(separator[j]);
-                j++;
-            }
-        }
-    }
+		if (separator != NULL && i < n - 1)
+		{
+			unsigned int j = 0;
 
-    va_end(args);
+			while (separator[j])
+			{
+				_putchar(separator[j]);
+				j++;
+			}
+		}
+	}
 
-    _putchar('\n');
+	va_end(args);
+
+	_putchar('\n');
 }
