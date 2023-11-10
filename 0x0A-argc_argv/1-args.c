@@ -7,9 +7,11 @@
  *
  * Return: Always 0 (Success)
  */
-int main(void)
+int main(int argc, char *argv[])
 {
-	printf("0\n");
+	(void)argc;
+
+	printf("%d\n", argc - 1);
 
 	return (0);
 }
