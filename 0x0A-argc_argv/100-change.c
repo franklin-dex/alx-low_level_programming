@@ -43,9 +43,6 @@ void print_minimum_coins(int min_coins);
  */
 int main(int argc, char *argv[])
 {
-	int cents;
-	int min_coins;
-
 	if (check_args(argc) != 0)
 		return (1);
 
@@ -59,7 +56,7 @@ int main(int argc, char *argv[])
 
 	int min_coins = calculate_coins(cents);
 
-	print_minimum_coins(min_coins);
+	printf("%d\n", min_coins);
 
 	return (0);
 }
