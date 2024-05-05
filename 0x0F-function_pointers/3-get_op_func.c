@@ -1,5 +1,4 @@
 #include "3-calc.h"
-#include <stdio.h>
 #include <stdlib.h>
 
 /**
@@ -28,6 +27,6 @@ int (*get_op_func(char *s))(int, int)
 		i++;
 	}
 
-	printf("Error\n");
-	exit(99);
+	_putchar("Error\n");
+	return (99);
 }
